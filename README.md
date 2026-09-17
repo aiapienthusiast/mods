@@ -254,6 +254,15 @@ Groq provides models powered by their LPU inference engine.
 Set the `GROQ_API_KEY` environment variable. If you don't have one yet, you can
 get it from the [Groq console](https://console.groq.com/keys).
 
+### Cheaper Inference
+
+Cheaper Inference is an OpenAI-compatible gateway that serves chat models from
+several makers behind one endpoint and one key, at or below the maker's list
+price, with the maker's own model ids.
+
+Set the `CHEAPERINFERENCE_API_KEY` environment variable. If you don't have one
+yet, you can get it from the [Cheaper Inference docs](https://cheaperinference.com/docs).
+
 ### Gemini
 
 Mods supports using Gemini models from Google.

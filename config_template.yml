@@ -357,6 +357,56 @@ apis:
         aliases: ["qwq-sambanova", "qwq-32b"]
         max-input-chars: 49000 # 16k tokens
 
+  cheaperinference:
+    base-url: https://api.cheaperinference.com/v1
+    api-key:
+    api-key-env: CHEAPERINFERENCE_API_KEY
+    models: # https://cheaperinference.com/docs
+      claude-opus-5:
+        aliases: ["ci-opus-5"]
+        max-input-chars: 3062500 # 1M tokens
+        max-completion-tokens: 128000
+      claude-sonnet-5:
+        aliases: ["ci-sonnet-5"]
+        max-input-chars: 3062500 # 1M tokens
+        max-completion-tokens: 64000
+      claude-haiku-4.5:
+        aliases: ["ci-haiku"]
+        max-input-chars: 612500 # 200k tokens
+        max-completion-tokens: 64000
+      gpt-6-astra:
+        aliases: ["ci-astra"]
+        max-input-chars: 3215000 # 1.05M tokens
+        max-completion-tokens: 128000
+      gpt-5.6-luna:
+        aliases: ["ci-luna"]
+        max-input-chars: 3215000 # 1.05M tokens
+        max-completion-tokens: 128000
+      gemini-3.7-flash:
+        aliases: ["ci-flash"]
+        max-input-chars: 3211000 # 1Mi tokens
+        max-completion-tokens: 65536
+      grok-4.5:
+        aliases: ["ci-grok"]
+        max-input-chars: 1531000 # 500k tokens
+        max-completion-tokens: 128000
+      kimi-k3:
+        aliases: ["ci-kimi"]
+        max-input-chars: 3062500 # 1M tokens
+        max-completion-tokens: 131072
+      deepseek-v4-pro:
+        aliases: ["ci-deepseek"]
+        max-input-chars: 3062500 # 1M tokens
+        max-completion-tokens: 128000
+      glm-5.3:
+        aliases: ["ci-glm"]
+        max-input-chars: 3062500 # 1M tokens
+        max-completion-tokens: 131072
+      qwen-3-8-max:
+        aliases: ["ci-qwen"]
+        max-input-chars: 3062500 # 1M tokens
+        max-completion-tokens: 131072
+
   localai:
     # LocalAI setup instructions: https://github.com/go-skynet/LocalAI#example-use-gpt4all-j-model
     base-url: http://localhost:8080
